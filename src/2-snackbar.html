@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+
+    <form class="formSnack">
+        <label class="labelInput">
+            Delay (ms)
+            <input class="inputWrite" type="number" name="delay" required />
+            <fieldset>
+        </label>
+
+        <legend>State</legend>
+        <label class="inputWriteFull">
+            <input type="radio" name="state" value="fulfilled" required />
+            Fulfilled
+        </label>
+        <label class="inputWriteRej">
+            <input type="radio" name="state" value="rejected" required />
+            Rejected
+        </label>
+        </fieldset>
+
+        <button class="btnSnack" type="submit">Create notification</button>
+    </form>
+
+    <script type="module" src="./js/2-snackbar.js"></script>
+</body>
+
+</html>
